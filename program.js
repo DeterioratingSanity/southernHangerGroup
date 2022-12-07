@@ -1,5 +1,9 @@
-$("#cse-search-box").submit(function(){
-  $(document).ready(function(){
-    $("#cse-search-box button").click();
-  });
+$("#search button").click(function(){
+  var input = $("#help").val();
+  $("#gSearch").attr("src", "https://www.google.com/search?q="+input+"+site%3Asouthernhanger.net");
+});
+$("#search").submit(function(event){
+  event.preventDefault();
+  var input = $("#help").val();
+  $("#gSearch").attr("src", "https://www.google.com/search?q="+input+"+site%3Asouthernhanger.net");
 });

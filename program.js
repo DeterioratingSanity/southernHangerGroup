@@ -1,3 +1,5 @@
 $("#cse-search-box").submit(function(){
-  $("#cse-search-box button").click();
+  $(document).ready(function(){
+    $("#cse-search-box button").click();
+  });
 });

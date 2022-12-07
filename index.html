@@ -34,15 +34,10 @@
                 <a class="nav-link active" href="#">&#128722 Cart</a>
               </li>
             </ul>
-            <!--credit to gotoplanb for id, the four inputs outside of the div, and the input name inside the div-->
-            <form id="cse-search-box" class="d-flex me-5 input-group" role="search">
+            <form id="search" class="d-flex me-5 input-group" role="search">
               <button class="btn bg-white border border-end-0" type="button" data-bs-toggle="modal" data-bs-target="#googleModal"><span class="material-symbols-outlined align-middle">search</span></button>
-              <input type="hidden" name="cx" value="001006011763809941815:njuofs6jfz4" />
-              <input type="hidden" name="cof" value="FORID:10" />
-              <input type="hidden" name="ie" value="UTF-8" />
-              <input style="display:none;" type="submit" name="sa" value="Search" />
               <div class="form-floating">
-                <input class="form-control border border-start-0" id="help" type="search" placeholder="Search" name="q" aria-label="Search">
+                <input class="form-control border border-start-0" id="help" type="search" placeholder="Search" aria-label="Search">
                 <label for="help">Search</label>
               </div>
             </form>
@@ -121,8 +116,6 @@
       </div>
     </nav>
     <hr>
-    <!--credit to gotoplanb-->
-    <script type="text/javascript" src="http://www.google.com/cse/brand?form=cse-search-box&lang=en"></script>
     <div class="modal fade" id="googleModal" tabindex="-1" aria-labelledby="googleModalLabel" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content">
@@ -131,22 +124,11 @@
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body">
-            <!--credit to gotoplanb-->
-            <div id="cse-search-results"></div>
+            <iframe src="" name="googleSearch" id="gSearch" title="Google Search"></iframe>
           </div>
         </div>
       </div>
     </div>
-    <!--credit to gotoplanb-->
-    <script type="text/javascript">
-      var googleSearchIframeName = "cse-search-results";
-      var googleSearchFormName = "cse-search-box";
-      var googleSearchFrameWidth = 600;
-      var googleSearchDomain = "www.google.com";
-      var googleSearchPath = "/cse";
-    </script>
-    <script type="text/javascript" src="http://www.google.com/afsonline/show_afs_search.js"></script>
-    <!--credit to DeterioratingSanity-->
     <div style="position:absolute; bottom: 0; width:100%">
       <div class="container">
         <footer class="py-3 my-4">

@@ -8,3 +8,7 @@
   width:100%;
   height:100%;
 }
+div.card img{
+  width:432px !important;
+  height:432px !important;
+}

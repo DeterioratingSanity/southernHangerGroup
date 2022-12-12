@@ -27,3 +27,6 @@ body{
   background-image: linear-gradient(to bottom left, hotpink , orangered) !important;
   height:100% !important;
 }
+a.text-body:hover{
+  color:#4B50B3 !important;
+}  

@@ -23,3 +23,7 @@ img#coCo{
 div.d-grid{
   width:138.219px !important;
 }
+html{
+  background-image: linear-gradient(to bottom left, hotpink , orangered);
+  height:100%;
+}

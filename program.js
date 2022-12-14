@@ -8,6 +8,7 @@ $("#search").submit(function(event){
 });
 $(document).ready(function(){
   $("#accept").click(){
-    document.cookie = "LocationOnOpen="+navigator.geolocation.getCurrentPosition()+"; expires=Thu, 18 Dec 2100 12:00:00 UTC";
+    let d = new Date();
+    document.cookie = "TimeOnOpen="+d.toUTCString()+"; expires=Thu, 18 Dec 2100 12:00:00 UTC";
   }
 });
